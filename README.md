@@ -214,16 +214,6 @@ Used for: Hamming distance computation (XOR + popcount), BNN accumulation.
 
 ---
 
-## Compile Check Status
 
-All 18 files verified with VCS (Synopsys):
-- **Verilog (6 files):** `vlogan -sverilog -timescale=1ns/1ps` → PASS
-- **SystemVerilog (6 files):** `vlogan -sverilog -timescale=1ns/1ps` → PASS
-- **VHDL (6 files):** `vhdlan` → Fixing minor VHDL aggregate issue, then PASS
-
-VCS setup used:
-```tcsh
-setenv VCS_HOME /tools/dist/vcs/W-2024.09-SP2-3
-setenv VCS_TARGET_ARCH amd64
 setenv PATH "${VCS_HOME}/bin:${PATH}"
 ```
